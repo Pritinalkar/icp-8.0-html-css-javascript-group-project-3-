@@ -1,6 +1,15 @@
 const feedbacks  = []
 //declare array to add feedback\
-
+function Loadfromloacalstorage()
+{
+    const allfeedback = JSON.parse(localStorage.getItem('allfeedback'))
+    if(allfeedback)
+    {
+        feedbacks.push(...allfeedback)
+    }
+   
+}
+Loadfromloacalstorage()
 function loadFeedbacks()
 {
     localStorage.setItem("allfeedback",JSON.stringify(feedbacks));
