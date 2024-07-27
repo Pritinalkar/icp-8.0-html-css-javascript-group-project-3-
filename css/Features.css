@@ -17,6 +17,12 @@
 
 
 
+#heading-txt span{
+    color: #32c1a0a1;
+    font-family: areBar;
+}
+
+
 #show-div
  {
    
@@ -36,10 +42,9 @@
     width: 100%;
     text-align: center;
     font-size: 35px;
-    margin-top: 10vh;
     position: relative;
     z-index: 1;
-   margin-top: 130px;
+   margin-top: 120px;
 }
 
 
@@ -88,13 +93,13 @@
     gap: 10px;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    
+    margin-top: 20px;
 }
 
 .features
 {
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     height: 170px;
@@ -119,10 +124,14 @@
     color: var(--whiteColor);
     font-size: 15px;
 }
+.quete{
+    font-family: gilyroy;
+}
 .features:hover
 {
     border: 1px solid rgb(5, 247, 194);
-    margin-top: 5px;
+    margin-top:10px;
+    cursor: pointer;
 }
 .features_logo
 {
