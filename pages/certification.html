@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certification Course</title>
+    <link rel="icon" type="image/x-icon" href="../images/certification_images/certificate">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/certification.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 </head>
 
 <body id="body">
@@ -49,121 +51,86 @@
 
         <p class="main_title"><span>Certification</span> Course</p>
 
-        <div class="parent-holder">
-            <div class="certificate-card" onmouseover="visible('item1')">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
+        <div class="parent-holder" id="p">
+            <div class="certificate-card" onmouseenter="visible('item1','img-1')">
+                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" id="img-1" />
                 <s class="first-txt">Rs 1000</s>
                 <p class="second-txt">Rs 500</p>
                 <p class="title">Full Access</p>
                 <button id="btn">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item2')">
-                <img src="../images/certification_images/html_course" alt="img-2" class="img-card" />
+            <div class="certificate-card" onmouseenter="visible('item2','img-2')">
+                <img src="../images/certification_images/html_course" alt="img-2" class="img-card" id="img-2" />
                 <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+                <p class="second-txt">Rs 800</p>
                 <p class="title">Learn HTML</p>
                 <button id="btn1">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item3')">
-                <img src="../images/certification_images/css_course" alt="img-3" class="img-card" />
+            <div class="certificate-card" onmouseenter="visible('item3','img-3')">
+                <img src="../images/certification_images/css_course" alt="img-3" class="img-card" id="img-3"/>
                 <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+                <p class="second-txt">Rs 649</p>
                 <p class="title">Learn CSS</p>
                 <button id="btn2">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item4')">
-                <img src="../images/certification_images/js_course" alt="img-4" class="img-card" />
+            <div class="certificate-card" onmouseenter="visible('item4','img-4')">
+                <img src="../images/certification_images/js_course" alt="img-4" class="img-card" id="img-4"/>
                 <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+                <p class="second-txt">Rs 899</p>
                 <p class="title">Learn JavaScript</p>
                 <button id="btn3">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item5')">
-                <img src="../images/certification_images/reactjs_course" alt="img-5" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+            <div class="certificate-card" onmouseenter="visible('item5','img-5')">
+                <img src="../images/certification_images/reactjs_course" alt="img-5" class="img-card" id="img-5" />
+                <s class="first-txt">Rs 1200</s>
+                <p class="second-txt">Rs 699</p>
                 <p class="title">Learn ReactJs</p>
                 <button id="btn4">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item6')">
-                <img src="../images/certification_images/bootstrap_course" alt="img-6" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+            <div class="certificate-card" onmouseenter="visible('item6','img-6')">
+                <img src="../images/certification_images/bootstrap_course" alt="img-6" class="img-card" id="img-6"/>
+                <s class="first-txt">Rs 799</s>
+                <p class="second-txt">Rs 499</p>
                 <p class="title">Learn Bootstrap 3</p>
                 <button id="btn5">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item7')">
-                <img src="../images/certification_images/typescript_course" alt="img-7" class="img-card" />
+            <div class="certificate-card" onmouseenter="visible('item7','img-7')">
+                <img src="../images/certification_images/typescript_course" alt="img-7" class="img-card" id="img-7" />
                 <s class="first-txt">Rs 1000</s>
                 <p class="second-txt">Rs 500</p>
                 <p class="title">Full Access</p>
                 <button id="btn6">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item8')">
-                <img src="../images/certification_images/python_course" alt="img-8" class="img-card" />
+            <div class="certificate-card" onmouseenter="visible('item8','img-8')">
+                <img src="../images/certification_images/python_course" alt="img-8" class="img-card" id="img-8"/>
                 <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+                <p class="second-txt">Rs 799</p>
                 <p class="title">Learn Typescript</p>
                 <button id="btn7">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item9')">
-                <img src="../images/certification_images/web_design" alt="img-9" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+            <div class="certificate-card" onmouseenter="visible('item9','img-9')">
+                <img src="../images/certification_images/web_design" alt="img-9" class="img-card"  id="img-9"/>
+                <s class="first-txt">Rs 1500</s>
+                <p class="second-txt">Rs 1000</p>
                 <p class="title">Learn Web Design</p>
                 <button id="btn8">Buy now</button>
             </div>
 
-            <div class="certificate-card" onmouseover="visible('item10')">
-                <img src="../images/certification_images/back_end" alt="img-10" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
+            <div class="certificate-card" onmouseenter="visible('item10','img-10')">
+                <img src="../images/certification_images/back_end" alt="img-10" class="img-card" id="img-10" />
+                <s class="first-txt">Rs 1200</s>
+                <p class="second-txt">Rs 999</p>
                 <p class="title">Learn Back End</p>
                 <button id="btn9">Buy now</button>
             </div>
-<<<<<<< HEAD
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-
-            <div class="certificate-card">
-                <img src="../images/certification_images/full_access-1.avif" alt="img-1" class="img-card" />
-                <s class="first-txt">Rs 1000</s>
-                <p class="second-txt">Rs 500</p>
-                <p class="title">Full Access</p>
-                <button>Buy now</button>
-            </div>
-=======
->>>>>>> c96403c770d63225f610e5f0c6bed1935ce51f7b
         </div>
 
         <footer class="footer">
@@ -208,13 +175,10 @@
             <p class="footer-copyright">&copy; 2024 All rights reserved Codex</p>
         </footer>
 
+        <a href="#" class="go-top" id="go-top"><i class="ri-arrow-up-s-line"></i></a>
     </div>
-<<<<<<< HEAD
-    
-=======
 
     <script src="../script/certification.js"></script>
->>>>>>> a6249948c9768acc1f15acd330bafe93d9f33846
     <script src="../script/nav-bar.js"></script>
 
 
