@@ -11,8 +11,17 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: gilroy;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 
@@ -300,6 +309,27 @@ text-decoration: wavy;
     cursor: pointer;
 
 }
+
+/* Responsive */
+@media screen and (max-width:420px)
+{
+    
+
+}
+@media screen and (min-width:421px) and (max-width:610px)
+{
+
+}
+@media screen and (min-width:611px) and (max-width:750px) 
+{
+
+}
+@media screen and (min-width:750) and (max-width:1200)
+{
+
+}
 /* fotter  */
+
+
 
 

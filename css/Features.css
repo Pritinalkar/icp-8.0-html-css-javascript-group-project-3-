@@ -11,9 +11,21 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Gilroy';
 }
+
+body,html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 
 
