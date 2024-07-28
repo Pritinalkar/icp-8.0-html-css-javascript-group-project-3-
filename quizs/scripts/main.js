@@ -20,7 +20,7 @@ let bgMusice = document.querySelector("#bgMusice")
 let soundbtn = document.querySelector("#sound")
 
 window.addEventListener("load",()=>{
-  bgMusice.play()
+  //bgMusice.play()
 })
 
 let flag=0

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/login_signup.css">
+
+    <title>signup | codeX</title>
+</head>
+
+<body id="body">
+    <div id="nav">
+        <div id="left">
+            <h1>code<span>X</span></h1>
+        </div>
+        <div id="right">
+              <a href="login.html">LogIn</a>
+
+              <div id="theam-btn-container">
+               <label class="switch">
+                   <input type="checkbox" id="checkValue">
+                   <span class="slider round"></span>
+                 </label>
+             </div>
+             <span><img src="./../images/menu-open.sv g" alt=""></span>
+
+        </div>
+        <div id="menu-bar">
+            <!-- <ul>
+                <li><a href="./../index.html"><i class="ri-home-fill"></i> Home</a></li>
+                <li><a href="./course.html"><i class="ri-video-chat-fill"></i> Courses</a></li>
+                <li><a href="./resume.html"><i class="ri-article-fill"></i> Resume</a></li>
+                <li><a href="./editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
+                <li><a href="./placement.html"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+                <li><a href="./team.html"><i class="ri-team-fill"></i> Our Team</a></li>
+            
+            </ul> -->
+            <div id="close-menu">
+                <img src="./../images/menu-close.svg" alt="">
+            </div>
+         </div>
+        
+   </div>
+
+
+   <div id="container">
+    <div id="signup">
+        <form >
+            <h2 class="signup"> create<span class="back"> Your  </span>  account</h2>
+
+            <span class="small-container">
+            <input type="text" id="_userName" required placeholder="first name">
+            <input type="text" id="_userName1" required placeholder="last name">
+        </span>
+        <span class="small-container">
+
+        <input type="number" id="_userAge" required placeholder=" Age">
+
+            <select id="_userGender" required>
+                <option  disabled selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </span>
+
+            <input type="tel" id="_userPhone" required placeholder="Enter your phone number">
+            <input type="email" id="_userEmail" required placeholder="Enter your email">
+            <input type="password" id="_userPass" required placeholder="Enter your password">
+            <p class="question">Already Have An Account? <a href="./login.html" class="login-link">Sign In</a></p>
+            <input type="submit" value="SIGN UP" id="btn" class="gotologin" onclick="savee()">
+        </form>
+    </div>
+    <div id="imgdiv">
+        <img src="./../images/keyboard.jpg" alt="keyboard img">
+    
+    </div>
+    
+ </div>
+<span class="notification"></span>
+   <script src="./../script/nav-bar.js"></script>
+   <script src="./../script/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="shortcut icon" href="../images/bg41.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div id="nav">
+        <div id="left">
+            <h1>code<span>X</span></h1>
+        </div>
+        <div id="right">
+            <a href="../index.html" id="logOut">Log Out</a>
+
+            <div id="theam-btn-container">
+                <label class="switch">
+                    <input type="checkbox" id="checkValue">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+ 
+            <span><img src="./../images/menu-open.sv g" alt=""></span>
+        </div>
+        <div id="menu-bar">
+            <!-- <ul>
+               <li><a href="./../index.html"><i class="ri-home-fill"></i> Home</a></li>
+               <li><a href="./course.html"><i class="ri-video-chat-fill"></i> Courses</a></li>
+               <li><a href="./resume.html"><i class="ri-article-fill"></i> Resume</a></li>
+               <li><a href="./editor.html"><i class="ri-code-box-fill"></i> Editor</a></li>
+               <li><a href="./placement.html"><i class="ri-graduation-cap-fill"></i> Our Success</a></li>
+               <li><a href="./team.html"><i class="ri-team-fill"></i> Our Team</a></li>
+           
+           </ul> -->
+            <div id="close-menu">
+                <img src="./../images/menu-close.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="container">
+        <div id="user-info">
+            <div id="profile">
+                <img  alt="">
+            </div>
+            <div id="info">
+                <span class="name"></span>
+                <span class="email"></span>
+                <span class="btns">
+                    <a href="../index.html">Home</a>
+                    <a href="" id="setting">settings</a>
+                </span>
+            </div>
+        </div>
+
+        <div id="courses">
+            <h2>your <span>courses</span>.</h2>
+            <div id="course-container">
+                <!--course add here-->
+            </div>
+        </div>
+
+    </div>
+ 
+
+ <div id="setting-page">
+      <h2>account <span>settings</span>.</h2>
+      <div id="setting-container">
+         <div id="options">
+            <button onclick="chnaegInfo('password')"><i class="ri-shield-keyhole-fill"></i>change password</button>
+            <button id="del" onclick="chnaegInfo('delete')"><i class="ri-delete-bin-6-fill"></i>delete account</button>
+         </div>
+         <div id="settings">
+             <div id="update">
+                <!--add input boxes by to update code..-->
+                
+             </div>
+         </div> 
+
+         <span id="close"><i class="ri-close-line"></i></span>
+      </div>
+ </div>
+
+ <span class="notification">hiiiii</span>
+
+    <script src="../script/nav-bar.js"></script>
+    <script src="../script/dashboard.js"></script>
+</body>
+
+</html>
