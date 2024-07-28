@@ -1,50 +1,54 @@
-const loginsec=document.querySelector('.login-section')
-const loginlink=document.querySelector('.login-link')
-const registerlink=document.querySelector('.register-link')
-registerlink.addEventListener('click',()=>{
-    loginsec.classList.add('active')
-})
-loginlink.addEventListener('click',()=>{
-    loginsec.classList.remove('active')
-})
+let users = JSON.parse( localStorage.getItem('user'))
 
-let loginemail=document.getElementById('loginemail')
+let loginBtn = document.querySelector("#btn")
 
+  loginBtn.addEventListener("click",()=>{
+    
 
-
-//function
-const arr = [{
-    email: "user@gmail.com",
-    password: "user"
-
-}]
-function checkuser() {
-
-    const msg = document.getElementById('message')
-    const page = document.getElementById('page')
-    const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].email == email && arr[i].password == password) {
-            page.setAttribute("href", "https://codee-x.netlify.app/")
-            msg.innerHTML = `login sucessful     `
-
-        }
-        else {
-            msg.innerHTML = `invalid email or pass please        <span onclick="User('signup')">signup</span>`
-        }
-
+    
+    if(users==null || users.length==0){
+      validate("can't find your account ,please signup 😞",2000)
+      return
     }
+
+
+    let email = document.querySelector("#_userMobile").value
+    let pass = document.querySelector("#_userpass").value
+
+      users.forEach((user)=> {
+           if(email == user.email && pass== user.pass){
+                 validate("login successfully..🎉",2000)
+                 localStorage.setItem("logedInUser",JSON.stringify(user))
+                 goTodashboard()
+           }else{
+              validate("please check details 😞",2000)
+           }
+      });
+  
+  })
+
+ 
+document.querySelector('form').addEventListener('submit', (e) => e.preventDefault())
+
+
+
+//send the validation notification
+function validate(error, time) {
+    let notification = document.querySelector('.notification')
+    notification.style.display = "block"
+    notification.innerText = error
+    setTimeout(function () {
+        notification.style.display = "none"
+    }, time)
 }
 
-function data(){
-    const signemail = document.getElementById('signemail').value
-    const signpassword = document.getElementById('signpassword').value
-
-arr.push({
-    email:`${signemail}`,
-    password:`${signpassword}`
+function goTodashboard(){
+  
+    let btn = document.querySelector(".goTodashboard");
+        btn.addEventListener("click", () => {
+        window.location.assign("dashboard.html");
 })
-console.log(arr)
-
+    
 }
+
+

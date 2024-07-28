@@ -15,9 +15,9 @@
 }
 
 body{
+    height: 100%;
+    width: 100%;
     position: relative;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
 }
 
@@ -90,19 +90,28 @@ input:checked + .slider:before {
 }  
 
 
-#theam-btn-container{
-  position: absolute;
-  right: 10%;
-  top: 4%;
+
+
+
+#btn-con{
+  margin: 0 auto;
+  height: 20vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+
+
 #container{
-  height: 100%;
+  height:70vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 #container h1{
@@ -146,12 +155,8 @@ input:checked + .slider:before {
 }
 
 
-
 #sound{
   font-size: 30px;
-  top: 4%;
-  left: 10%;
-  position: absolute;
   cursor: pointer;
 }
 
@@ -196,4 +201,247 @@ audio{
   text-decoration: none;
   font-weight: 900;
   color: #8cd5be;
+}
+
+@media screen and (max-width:480px) {
+  
+
+  #btn-con{
+    margin: 0 auto;
+    height: 10vh;
+  }
+
+
+#container{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#container h1{
+  font-size: 10vw;
+  margin-bottom: 5vh;
+}
+
+#container h1 span{
+  font-family: areBar;
+  font-size:11vw;
+  color: #29c283;
+
+}
+
+#btns-container{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10vw;
+}
+
+#btns-container a{
+   padding: 1.5vh 2vw;
+   font-size: 1.4em;
+   width: 60vw;
+}
+
+
+#back{
+ position: absolute;
+ bottom: 4%;
+ left: 10%;
+ font-size: 6vw;
+ text-decoration: none;
+ font-weight: 900;
+ color: #8cd5be;
+}
+
+
+#show1{
+  height: 50vh;
+  width: 80vw;
+  background-color: #38915aa9;
+  filter: blur(100px);
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8a5d;
+  z-index: -1;
+}
+
+#show{
+  height: 20vh;
+  width: 40vw;
+  background-color: #c5e662a9;
+  filter: blur(100px);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8b3b;
+  z-index: -1;
+}
+
+}
+
+@media screen and (min-width:481px) and (max-width:720px) {
+  
+  #btns-container a{
+    padding: 1.5vh 2vw;
+    font-size: 1.4em;
+    width: 25vw;
+ }
+
+
+ 
+#show1{
+  height: 50vh;
+  width: 80vw;
+  background-color: #38915aa9;
+  filter: blur(100px);
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8a5d;
+  z-index: -1;
+}
+
+#show{
+  height: 20vh;
+  width: 40vw;
+  background-color: #c5e662a9;
+  filter: blur(100px);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8b3b;
+  z-index: -1;
+}
+
+
+
+#container h1{
+  font-size: 10vw;
+  margin-bottom: 5vh;
+}
+
+#container h1 span{
+  font-family: areBar;
+  font-size:11vw;
+  color: #29c283;
+
+}
+ 
+
+}
+
+
+@media screen and (min-width:721px) and (max-width:980px) {
+  #btns-container a{
+    padding: 1.5vh 2vw;
+    font-size: 1.4em;
+    width: 25vw;
+ }
+
+
+ 
+#show1{
+  height: 50vh;
+  width: 80vw;
+  background-color: #38915aa9;
+  filter: blur(100px);
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8a5d;
+  z-index: -1;
+}
+
+#show{
+  height: 20vh;
+  width: 40vw;
+  background-color: #c5e662a9;
+  filter: blur(100px);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8b3b;
+  z-index: -1;
+}
+
+
+
+#container h1{
+  font-size: 10vw;
+  margin-bottom: 5vh;
+}
+
+#container h1 span{
+  font-family: areBar;
+  font-size:11vw;
+  color: #29c283;
+
+}
+}
+
+
+
+@media screen and (min-width:981px) and (max-width:1090px) {
+  #btns-container a{
+    padding: 2vh 2vw;
+    font-size: 1.4em;
+    width: 20vw;
+ }
+
+
+ 
+#show1{
+  height: 50vh;
+  width: 80vw;
+  background-color: #38915aa9;
+  filter: blur(100px);
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8a5d;
+  z-index: -1;
+}
+
+#show{
+  height: 20vh;
+  width: 40vw;
+  background-color: #c5e662a9;
+  filter: blur(100px);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 100px #24ba8b3b;
+  z-index: -1;
+}
+
+
+
+#container h1{
+  font-size: 8vw;
+  margin-bottom: 5vh;
+}
+
+#container h1 span{
+  font-family: areBar;
+  font-size:9vw;
+  color: #29c283;
+
+}
 }

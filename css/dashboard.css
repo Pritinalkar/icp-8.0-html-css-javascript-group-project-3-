@@ -1,0 +1,523 @@
+@font-face {
+    font-family: gilyroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: areBar;
+    src: url(../fonts/Aerovias\ Brasil\ NF.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: gilyroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+}
+
+#user-info {
+    height: 25vh;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+}
+
+#profile {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    background-color: green;
+    overflow: hidden;
+}
+
+#profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+#info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.name {
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.email {
+    color: #aba7a7;
+    font-size: 1.5vw;
+}
+
+.btns {
+    margin-top: 3vh;
+    display: flex;
+    gap: 2vw;
+}
+
+.btns a {
+    background-color: #138b65;
+    text-decoration: none;
+    padding: 1vh 3vw;
+    font-size: 1.2em;
+    color: #f5f5f5;
+}
+
+.btns a:hover {
+    background-color: #15af7e;
+}
+
+#courses {
+    height: 50vh;
+    width: 100%;
+    white-space: nowrap;
+    color: gray;
+}
+
+#courses h2 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+#courses h2 span {
+    font-family: areBar;
+    color: #117958;
+}
+
+#course-container {
+    height: 95%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-top: 4vh;
+}
+
+
+#course-container h3 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 2vw;
+}
+
+
+#course-container::-webkit-scrollbar {
+    display: none;
+}
+
+.course {
+    height: 90%;
+    width: 30vw;
+    background-color: #DDDCDC;
+    margin: 0 2vw;
+    font-size: 1.4em;
+    color: black;
+    font-weight: 700;
+    display: inline-block;
+}
+
+
+.course span {
+    display: flex;
+    gap: 1vw;
+    text-transform: capitalize;
+    margin-top: 3vh;
+    margin-left: 20px;
+}
+
+.course a {
+    font-size: 2vw;
+    padding: 0.5vh 3vw;
+    margin-left: 2vw;
+    background-color: #119581;
+    color: #f5f5f5;
+    margin-top: 3vh;
+    display: block;
+    width: 40%;
+}
+
+
+.course a:hover {
+    background-color: #14a778;
+}
+
+#setting-page {
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    background: linear-gradient(to bottom, #ade4d3ab, #000000);
+    backdrop-filter: blur(10px);
+    top: 8vh;
+    left: 0;
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+}
+
+#setting-page h2 {
+    text-align: center;
+    font-size: 3.5vw;
+    margin-top: 4vh;
+}
+
+#setting-page h2 span {
+    font-family: areBar;
+    color: #0d553e;
+    font-size: 4vw;
+}
+
+#setting-container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#options {
+    height: 30%;
+    width: 50vw;
+    display: flex;
+    align-items: start;
+}
+
+#options button {
+    height: 8vh;
+    width: 20vw;
+    text-align: center;
+    margin-top: 6vh;
+    margin-left: 4vw;
+    font-size: 1.5vw;
+    background-color: #147e5c;
+    color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#settings {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#close {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+#options #del {
+    background-color: #a82121;
+}
+
+#update {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40vw;
+    height: 90%;
+    gap: 5vh;
+    background-color: #a7aeab72;
+    box-shadow: 1px 1px 10px #7daf96a8;
+    border-radius: 4px;
+    margin-top: 4vh;
+    display: none;
+}
+
+#update input {
+    height: 8vh;
+    width: 65%;
+    outline: none;
+    border: none;
+    background-color: #a3f7dc75;
+    font-size: 1em;
+    border-bottom: 4px solid #34ac70;
+    padding-left: 2vw;
+    font-weight: 800;
+}
+
+#update button {
+    width: 65%;
+    height: 8vh;
+    font-weight: 800;
+    background-color: #208452;
+    border: none;
+    font-size: 1.5vw;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+#update p {
+    color: #a4aeab;
+    font-size: 15px;
+    display: flex;
+    align-items: start;
+    gap: 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#update p input {
+    color: #c3f1e2;
+    height: 15px;
+    font-size: 15px;
+    width: 15px;
+
+}
+
+.notification {
+    padding: 2.1vh 2vw;
+    background-color: #019a88;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    color: #f5f5f5;
+    font-size: 900;
+    white-space: nowrap;
+    z-index: 999999999999;
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+
+
+    #user-info {
+        height: 25vh;
+        width: 100%;
+        margin-left: 4vw;
+    }
+
+    #profile {
+        width: 65px;
+        height: 65px;
+    }
+
+
+
+    #info {
+        height: 100%;
+        margin-left: 2vw;
+    }
+
+    .name {
+        font-size: 8vw;
+        font-weight: 900;
+    }
+
+    .email {
+        font-size: 4.5vw;
+        margin-top: 1vh;
+    }
+
+    .btns {
+        margin-top: 1vh;
+        display: flex;
+        gap: 4vw;
+    }
+
+    .btns a {
+        padding: 0.2vh 3vw;
+        font-size: 1.2em
+    }
+
+
+    #courses {
+        height: 80vh;
+        width: 100%;
+        white-space: nowrap;
+        color: gray;
+    }
+
+    #courses h2 {
+        font-size: 10vw;
+    }
+
+
+    #course-container {
+        height: 55%;
+        width: 100%;
+        margin-top: 8vh;
+    }
+
+
+    .course {
+        height: 90%;
+        width: 85vw;
+        margin: 0 3vw;
+        font-size: 1.1em;
+    }
+
+    .course span {
+        gap: 3vw;
+        margin-top: 3vh;
+        margin-left: 20px;
+    }
+
+    .course a {
+        font-size: 1.3em;
+        padding: 1vh 3vw;
+        margin-left: 2vw;
+        margin-top: 3vh;
+        width: 70%;
+        text-align: center;
+    }
+
+
+    #setting-page h2 {
+        font-size: 8vw;
+    }
+
+    #setting-page h2 span {
+        font-size: 8.5vw;
+    }
+
+    #setting-container {
+        height: 80vh;
+        width: 100%;
+    }
+
+    #options {
+        height: 20%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+        justify-content: center;
+    }
+
+    #options button {
+        height: 6vh;
+        width: 40vw;
+        margin-top: 2vh;
+        margin-left: 0vw;
+        font-size: 4vw;
+    }
+
+    #settings {
+        height: 100%;
+        width: 95%;
+    }
+
+    #close {
+        top: 4%;
+        font-size: 8vw;
+    }
+
+
+    #update {
+        width: 90vw;
+        height: 90%;
+        gap: 5vh;
+        background-color: #777b7a92;
+    }
+
+
+
+    #update input {
+        height: 7vh;
+        width: 80%;
+    }
+
+    #update button {
+        width: 80%;
+        height: 7vh;
+        font-size: 4.5vw;
+    }
+
+    #update p {
+        gap: 7px;
+        font-weight: 600;
+    }
+
+
+}
+
+
+@media screen and (min-width:481px) and (max-width:850px) {
+    .course {
+        height: 90%;
+        width: 50vw;
+        font-size: 1.3em;
+    }
+     
+    .course a {
+        font-size: 1.1em;
+        padding: 1.2vh 3vw;
+        margin-left: 2vw;
+        background-color: #119581;
+        color: #f5f5f5;
+        margin-top: 3vh;
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+
+    #update {
+        width: 70vw;
+    }
+
+    
+#update input {
+    height: 8vh;
+    width: 70%;
+}
+
+#update button {
+    width: 65%;
+    height: 7vh;
+    font-size: 1.1em;
+}
+
+#options {
+    height: 30%;
+    width: 80vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#options button {
+    height: 8vh;
+    width: 40vw;
+    font-size: 1.1em;
+}
+
+
+#close {
+    position: absolute;
+    top:4%;
+    right: 10%;
+    font-size:2em;
+    cursor: pointer;
+}
+
+}
