@@ -128,7 +128,7 @@ let checkdel = document.querySelector("#chk").checked
 
        users.forEach((foundedUsers,index)=>{
              if(foundedUsers.email==user.email && foundedUsers.pass==user.pass){
-
+                
                   users.splice(index,1)
                   localStorage.setItem('user',JSON.stringify(users))
                   localStorage.removeItem('cartItems')

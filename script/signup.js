@@ -5,7 +5,6 @@ let userdetails=[]
 
 
 //getting user info and validate it...
-
 function savee() {
     let name = document.getElementById('_userName').value
     let surname = document.getElementById('_userName1').value
@@ -50,7 +49,7 @@ function savee() {
 
 document.querySelector('form').addEventListener('submit', (e) => e.preventDefault())
 
-//send the validation notification
+//send the validation notification...
 function validate(error, time) {
     let notification = document.querySelector('.notification')
     notification.style.display = "block"
@@ -60,6 +59,8 @@ function validate(error, time) {
     }, time)
 }
 
+
+//save the user....
 function saveUser(userInfo) {
     let user = {
         name: userInfo.name,

@@ -58,3 +58,25 @@ checkBtn.addEventListener('click',function(e){
 
     }
 })
+
+
+let dashboardLink = document.querySelector("#dashbordLink a")
+let openPageUrl = window.location.href
+
+
+dashboardLink.addEventListener("click",()=>{
+  
+     if(localStorage.getItem('logedInUser')){
+           
+           if(openPageUrl.includes("pages")){
+             dashboardLink.setAttribute('href','./dashboard.html')
+           }else{
+            dashboardLink.setAttribute('href','./pages/dashboard.html')
+           }
+
+     }else{
+          alert("please login to get your dashboard...")
+     }
+
+})
+  
