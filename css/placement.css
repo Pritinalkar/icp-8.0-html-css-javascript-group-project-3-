@@ -56,8 +56,8 @@ body::-webkit-scrollbar{
 }
 
 #heading-txt span{
-    color: #32c1a0a1;
-    font-family: areBar;
+    color: #146653fd;
+    font-family: gilyroy;
 }
 .Quete
 {
@@ -102,7 +102,7 @@ body::-webkit-scrollbar{
     gap:40px ;
     flex-direction: row;
     flex-wrap: wrap; 
-    margin-top: 80px;
+   
     /* margin-top: 200px; */
 }
 
@@ -242,7 +242,7 @@ text-decoration: wavy;
 {
  
     display: flex;
-    height: 100px;
+    height: 60px;
     width: 550px;
     position: relative;
     background-color: whitesmoke;
@@ -309,27 +309,4 @@ text-decoration: wavy;
     cursor: pointer;
 
 }
-
-/* Responsive */
-@media screen and (max-width:420px)
-{
-    
-
-}
-@media screen and (min-width:421px) and (max-width:610px)
-{
-
-}
-@media screen and (min-width:611px) and (max-width:750px) 
-{
-
-}
-@media screen and (min-width:750) and (max-width:1200)
-{
-
-}
-/* fotter  */
-
-
-
 
