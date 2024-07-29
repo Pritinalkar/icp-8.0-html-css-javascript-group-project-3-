@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="shortcut icon" href="../images/bg41.png" type="image/x-icon">
     <title>Document</title>
 </head>
 
@@ -16,7 +17,7 @@
             <h1>code<span>X</span></h1>
         </div>
         <div id="right">
-            <a href="../index.html">Log Out</a>
+            <a href="../index.html" id="logOut">Log Out</a>
 
             <div id="theam-btn-container">
                 <label class="switch">
@@ -24,6 +25,7 @@
                     <span class="slider round"></span>
                 </label>
             </div>
+ 
             <span><img src="./../images/menu-open.sv g" alt=""></span>
         </div>
         <div id="menu-bar">
@@ -68,20 +70,25 @@
     </div>
  
 
-<div id="setting-page">
+ <div id="setting-page">
       <h2>account <span>settings</span>.</h2>
       <div id="setting-container">
          <div id="options">
-            <button><i class="ri-smartphone-fill"></i> chnage number</button>
-            <button><i class="ri-id-card-fill"></i>change name</button>
-            <button><i class="ri-shield-keyhole-fill"></i>change password</button>
-            <button class="del"><i class="ri-delete-bin-6-fill"></i>delete account</button>
+            <button onclick="chnaegInfo('password')"><i class="ri-shield-keyhole-fill"></i>change password</button>
+            <button id="del" onclick="chnaegInfo('delete')"><i class="ri-delete-bin-6-fill"></i>delete account</button>
          </div>
-         <div id="settings"></div>
+         <div id="settings">
+             <div id="update">
+                <!--add input boxes by to update code..-->
+                
+             </div>
+         </div> 
 
          <span id="close"><i class="ri-close-line"></i></span>
       </div>
-</div>
+ </div>
+
+ <span class="notification">hiiiii</span>
 
     <script src="../script/nav-bar.js"></script>
     <script src="../script/dashboard.js"></script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
+  
+</head>
+<body id="body">
+    <span id="sound"><i class="ri-volume-up-fill"></i></span>
+    <audio src="../audio/bg.mp3" controls id="bgMusice" ></audio>
+
+    <div id="theam-btn-container">
+        <label class="switch">
+          <input type="checkbox" id="checkValue">
+          <span class="slider round"></span>
+        </label>
+       </div>
+   
+       <div class="header">
+        <div id="score">Score: 0</div>
+        <div id="timer">Time Left: 03:00</div>
+    </div>
+
+    <div class="quiz-container" id="quiz">
+     
+        <div id="question" class="question">Question text</div>
+        <div class="options">
+            <label>
+                <input type="radio" name="answer" class="answer" id="a">
+                <span id="a_text">Option A</span>
+            </label>
+            <label>
+                <input type="radio" name="answer" class="answer" id="b">
+                <span id="b_text">Option B</span>
+            </label>
+            <label>
+                <input type="radio" name="answer" class="answer" id="c">
+                <span id="c_text">Option C</span>
+            </label>
+            <label>
+                <input type="radio" name="answer" class="answer" id="d">
+                <span id="d_text">Option D</span>
+            </label>
+        </div>
+       
+    </div>
+
+    <div id="feedback"></div>
+    <button id="submit">Submit</button>
+    <div id="show"></div>
+    <div id="show1"></div>
+     
+    <a href="../pages/main.html" id="back"><i class="ri-arrow-left-fill"></i>Home</a>
+
+    <script src="../scripts/cssquiz.js"></script>
+    <script src="../scripts/main.js"></script>
+  
+
+</body>
+</html>
