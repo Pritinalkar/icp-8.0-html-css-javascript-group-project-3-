@@ -1,7 +1,9 @@
+
 #title h2{
     text-align: center;
     font-size: 7vw;
     margin-top: 110px;
+    
 }
 
 #title h2 span{
@@ -100,6 +102,8 @@ body{
     .teamcard {
         height: 280px;
         width;300px;
+        box-shadow: 2px 2px 30px hwb(165 40% 13% / 0.631),
+        -2px -2px 15px hwb(166 40% 21% / 0.824);
     }
     .about-caed-img{
         height: 100px;
