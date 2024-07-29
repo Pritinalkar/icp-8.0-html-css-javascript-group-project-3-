@@ -4,6 +4,14 @@ let loginBtn = document.querySelector("#btn")
 
   loginBtn.addEventListener("click",()=>{
     
+
+    
+    if(users==null || users.length==0){
+      validate("can't find your account ,please signup 😞",2000)
+      return
+    }
+
+
     let email = document.querySelector("#_userMobile").value
     let pass = document.querySelector("#_userpass").value
 
@@ -16,6 +24,7 @@ let loginBtn = document.querySelector("#btn")
               validate("please check details 😞",2000)
            }
       });
+  
   })
 
  
@@ -41,3 +50,5 @@ function goTodashboard(){
 })
     
 }
+
+
