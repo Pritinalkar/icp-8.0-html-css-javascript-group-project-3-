@@ -165,7 +165,8 @@ function startTimer() {
             clearInterval(timerInterval);
             quiz.innerHTML = `
                 <h2>Time's up! You answered ${score}/${quizData.length} questions correctly</h2>
-                <button onclick="location.reload()">Reload</button>
+   
+                <button onclick="location.reload()" style=" background-color: #1a8765;">Reload</button>
             `;
         }
     }, 1000);

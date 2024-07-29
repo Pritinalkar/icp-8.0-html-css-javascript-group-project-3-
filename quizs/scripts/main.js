@@ -14,6 +14,8 @@ checkBtn.addEventListener('click',function(e){
     }
 })
 
+
+
 // audio handling.....
 
 let bgMusice = document.querySelector("#bgMusice")
