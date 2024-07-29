@@ -102,7 +102,7 @@ button:hover {
     background: #008b62;
 }
 
-.go-top {
+#go {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -115,15 +115,14 @@ button:hover {
     font-size: larger;
     border-radius: 50%;
     display: none;
-    pointer-events: none;
 }
 
-.go-top i{
+#go i{
     color: white ;
 }
 
-.go-top:hover{
-    background-color: #008b62;
+#go:hover{
+   background-color: #008b62;
     
 }
 

@@ -128,7 +128,7 @@ let checkdel = document.querySelector("#chk").checked
 
        users.forEach((foundedUsers,index)=>{
              if(foundedUsers.email==user.email && foundedUsers.pass==user.pass){
-
+                
                   users.splice(index,1)
                   localStorage.setItem('user',JSON.stringify(users))
                   localStorage.removeItem('cartItems')
@@ -146,7 +146,6 @@ let checkdel = document.querySelector("#chk").checked
       notification("please check the details...",2000)
    }
     
-
 }
 
 
@@ -170,3 +169,8 @@ function notification(error, time) {
         notification.style.display = "none"
     }, time)
 }
+
+
+//setuser name tittle.....
+
+ document.querySelector('title').innerText=`${user.name} | Dashboard |codeX `

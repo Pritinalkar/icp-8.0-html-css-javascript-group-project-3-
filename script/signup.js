@@ -5,7 +5,6 @@ let userdetails=[]
 
 
 //getting user info and validate it...
-
 function savee() {
     let name = document.getElementById('_userName').value
     let surname = document.getElementById('_userName1').value
@@ -17,6 +16,7 @@ function savee() {
     let gender = e.options[e.selectedIndex].text;
 
        if(phone.length < 10 || phone.length >10){
+
           validate("please enter valid number 😞",2000)
 
        }else if(parseInt(age) < 0  || parseInt(age) > 100 ){
@@ -50,7 +50,7 @@ function savee() {
 
 document.querySelector('form').addEventListener('submit', (e) => e.preventDefault())
 
-//send the validation notification
+//send the validation notification...
 function validate(error, time) {
     let notification = document.querySelector('.notification')
     notification.style.display = "block"
@@ -60,6 +60,8 @@ function validate(error, time) {
     }, time)
 }
 
+
+//save the user....
 function saveUser(userInfo) {
     let user = {
         name: userInfo.name,
@@ -72,12 +74,14 @@ function saveUser(userInfo) {
     };
 
     userdetails.push(user)
-
     localStorage.setItem("user", JSON.stringify(userdetails));
-
-        let btn = document.querySelector(".gotologin");
-            btn.addEventListener("click", () => {
-                window.location.assign("login.html");
-        })
+      let inputs = document.querySelectorAll("form input")
+          inputs.forEach((input)=>{
+             input.value=""
+          })
+     let btn = document.querySelector("#btn")
+         btn.value=`SIGN UP`
+          window.location.assign("./login.html")
 }
+
 

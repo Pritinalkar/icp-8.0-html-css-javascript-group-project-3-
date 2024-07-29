@@ -102,18 +102,18 @@ function hidebtn(btn) {
     (btn.style.display === "none") ? btn.style.display = "block" : btn.style.display = "none"
 }
 
-let goTop = document.getElementById("go-top")
+var gotopp = document.getElementById('go')
 
-window.addEventListener('scroll', () => {
-    (window.scrollY > 500)? goTop.style.display = "block":goTop.style.display = "none"
+window.addEventListener('scroll',() => {
+    (window.scrollY > 500) ? gotopp.style.display = "block" : gotopp.style.display = "none"
 });
 
-top.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+gotopp.addEventListener("click",() => {
+    window.scrollTo({
+        top: 0,
+        
     });
+});
 
 
 
