@@ -18,13 +18,14 @@ function loadFeedbacks()
     for(const feedback of feedbacks )  
     {
         feedbackContaoiner.innerHTML +=
-        `<div class= "parent_con">
+        `<div class= "parent_con"> 
         <div class="feedbacks_con">
         <div class="feedback_item">${feedback}</div>
         <img src= "./../images/Placement_Images/icon-5359553.png" class
         ="feedback_img">
         </div>
         </div>`
+       
         
     }
     

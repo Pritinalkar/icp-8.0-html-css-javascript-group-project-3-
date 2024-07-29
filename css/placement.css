@@ -114,6 +114,7 @@ body::-webkit-scrollbar{
     width: 250px;
     position: relative;
     border: 1px bold black;
+    
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
@@ -234,7 +235,9 @@ text-decoration: wavy;
    display: flex;
    flex-direction: row;
    justify-content: center;
-   
+   height: 200px;
+    
+  
    
     
 }
@@ -255,6 +258,10 @@ text-decoration: wavy;
     box-shadow: 0px 0px 5px 1px #0fcaa493 ;
    
     
+    
+    
+   
+    
 }
 .feedbacks_con:hover
 {
@@ -267,6 +274,7 @@ text-decoration: wavy;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
    
 }
 .feedback_img
