@@ -11,9 +11,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: gilroy;
 }
+
+
+
 
 
 
@@ -23,9 +25,9 @@
         height:40vh;
         border-radius: 50%;
         width: 50vw;
-        background-color: #309b82a1;
+        background-color: #31cda343;
         filter: blur(100px);
-        box-shadow:40px 40px 100px #309b82a1;
+        box-shadow:40px 40px 100px #44d4b5ce;
         position: absolute;
         top: 4%;
         left: 20%;
@@ -36,10 +38,9 @@
     width: 100%;
     text-align: center;
     font-size: 35px;
-    margin-top: 10vh;
     position: relative;
     z-index: 1;
-   margin-top: 130px;
+   margin-top: 120px;
 }
 
 
@@ -88,13 +89,13 @@
     gap: 10px;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    
+    margin-top: 20px;
 }
 
 .features
 {
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     height: 170px;
@@ -119,10 +120,14 @@
     color: var(--whiteColor);
     font-size: 15px;
 }
+.quete{
+    font-family: gilyroy;
+}
 .features:hover
 {
     border: 1px solid rgb(5, 247, 194);
-    margin-top: 5px;
+    margin-top:10px;
+    cursor: pointer;
 }
 .features_logo
 {
@@ -133,5 +138,294 @@
     margin-top: 15px;
     font-size: 20px;
     color: rgb(18, 18, 18);
+
+}
+
+/* Responsive  */
+@media screen and (min-width:301px) and (max-width:420px)
+{
+    .allfeatures_container
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+ 
+}
+.features_logo
+{
+    margin-top: 20px;
+    height: 50px;
+}
+.features_name{
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(18, 18, 18);
+
+}
+
+    
+.features
+{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 250px;
+    background-color:whitesmoke;
+    gap: 10px;
+    align-items: center;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px  #0fcaa493;
+}
+.features:hover
+{
+    border: 1px solid rgb(5, 247, 194);
+    margin-top:10px;
+    cursor: pointer;
+}
+
+
+}
+@media screen and (min-width:421px) and (max-width:610px)
+{
+.allfeatures_container
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+ 
+}
+.features_logo
+{
+    margin-top: 20px;
+    height: 50px;
+}
+.features_name{
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(18, 18, 18);
+
+}
+
+    
+.features
+{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 250px;
+    background-color:whitesmoke;
+    gap: 10px;
+    align-items: center;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px  #0fcaa493;
+}
+.features:hover
+{
+    border: 1px solid rgb(5, 247, 194);
+    margin-top:10px;
+    cursor: pointer;
+}
+
+}
+@media screen and (min-width:611px) and (max-width:750px) 
+{
+    .allfeatures_container
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+ 
+}
+.features_logo
+{
+    margin-top: 25px;
+    height: 50px;
+}
+.features_name{
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(18, 18, 18);
+
+}
+
+    
+.features
+{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    width: 280px;
+    background-color:whitesmoke;
+    gap: 10px;
+    align-items: center;
+    color: aliceblue;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px  #0fcaa493;
+}
+.features:hover
+{
+    border: 1px solid rgb(5, 247, 194);
+    margin-top:10px;
+    cursor: pointer;
+}
+
+    
+}
+@media screen and (min-width:751px) and (max-width:900px)
+
+{
+    .allfeatures_container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+     
+    }
+    .features_logo
+    {
+        margin-top: 25px;
+        height: 50px;
+    }
+    .features_name{
+        margin-top: 15px;
+        font-size: 20px;
+        color: rgb(18, 18, 18);
+    
+    }
+    
+        
+    .features
+    {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        width: 280px;
+        background-color:whitesmoke;
+        gap: 10px;
+        align-items: center;
+        color: aliceblue;
+        align-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px  #0fcaa493;
+    }
+    .features:hover
+    {
+        border: 1px solid rgb(5, 247, 194);
+        margin-top:10px;
+        cursor: pointer;
+    }
+
+}
+@media screen and (min-width:901px) and (max-width:1000px)
+{
+    
+
+    .allfeatures_container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+     
+    }
+    .features_logo
+    {
+        margin-top: 25px;
+        height: 50px;
+    }
+    .features_name{
+        margin-top: 15px;
+        font-size: 20px;
+        color: rgb(18, 18, 18);
+    
+    }
+    
+        
+    .features
+    {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        width: 280px;
+        background-color:whitesmoke;
+        gap: 10px;
+        align-items: center;
+        color: aliceblue;
+        align-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px  #0fcaa493;
+    }
+    .features:hover
+    {
+        border: 1px solid rgb(5, 247, 194);
+        margin-top:10px;
+        cursor: pointer;
+    }
+
+
+}
+@media screen and (min-width:1001px) and (max-width:1200px)
+
+{
+ 
+    .allfeatures_container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+     
+    }
+    .features_logo
+    {
+        margin-top: 25px;
+        height: 50px;
+    }
+    .features_name{
+        margin-top: 15px;
+        font-size: 20px;
+        color: rgb(18, 18, 18);
+    
+    }
+    
+        
+    .features
+    {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+        width: 280px;
+        background-color:whitesmoke;
+        gap: 10px;
+        align-items: center;
+        color: aliceblue;
+        align-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px  #0fcaa493;
+    }
+    .features:hover
+    {
+        border: 1px solid rgb(5, 247, 194);
+        margin-top:10px;
+        cursor: pointer;
+    }
+
 
 }

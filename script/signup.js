@@ -16,6 +16,7 @@ function savee() {
     let gender = e.options[e.selectedIndex].text;
 
        if(phone.length < 10 || phone.length >10){
+
           validate("please enter valid number 😞",2000)
 
        }else if(parseInt(age) < 0  || parseInt(age) > 100 ){
@@ -73,12 +74,14 @@ function saveUser(userInfo) {
     };
 
     userdetails.push(user)
-
     localStorage.setItem("user", JSON.stringify(userdetails));
-
-        let btn = document.querySelector(".gotologin");
-            btn.addEventListener("click", () => {
-                window.location.assign("login.html");
-        })
+      let inputs = document.querySelectorAll("form input")
+          inputs.forEach((input)=>{
+             input.value=""
+          })
+     let btn = document.querySelector("#btn")
+         btn.value=`SIGN UP`
+          window.location.assign("./login.html")
 }
+
 
