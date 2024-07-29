@@ -246,6 +246,7 @@ text-decoration: wavy;
 }
 .feedbacks_con
 {
+    
  
     display: flex;
     height: 60px;
@@ -291,6 +292,7 @@ text-decoration: wavy;
 .input_msg
 {
     text-align: center;
+    margin-top: -20px;
 }
 .input_feedback
 {
