@@ -297,7 +297,7 @@ h1 {
     }
 }
 
-@media (min-width: 100px) and (max-width: 200px) {
+@media (max-width: 100px) {
     .container {
         padding: 50px 5px;
     }
