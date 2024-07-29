@@ -43,12 +43,9 @@ function validate(error, time) {
 }
 
 function goTodashboard(){
-  
-    let btn = document.querySelector(".goTodashboard");
-        btn.addEventListener("click", () => {
-        window.location.assign("dashboard.html");
-})
-    
+  window.location.assign("./dashboard.html")
 }
+    
+
 
 
