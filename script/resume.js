@@ -167,65 +167,6 @@ function downloadPDF() {
   });
 }
 
-// for print resume code
-function printCV() {
-  if (x.matches) {
-    // If media query matches
-
-    document.getElementById("nav").style.display = "none";
-    document.getElementById("resume").style.marginTop = "0px";
-    document.getElementById("cv-form").style.display = "none";
-    document.getElementById("heading").style.display = "none";
-    document.getElementById("btnN").style.display = "none";
-    document.getElementById("cv-template").style.display = "block";
-    document.getElementById("resume").className = "col-12";
-
-    document.getElementById("footer").style.display = "none";
-    var h2 = document.getElementsByTagName("h2").length;
-    for (var i = 0; i < h2; i++) {
-      document.getElementsByTagName("h2")[i].style["font-size"] = "16px";
-    }
-
-    var h3 = document.getElementsByTagName("h3").length;
-    for (var i = 0; i < h3; i++) {
-      document.getElementsByTagName("h3")[i].style["font-size"] = "16px";
-    }
-
-    var h4 = document.getElementsByTagName("h4").length;
-    for (var i = 0; i < h4; i++) {
-      document.getElementsByTagName("h4")[i].style["font-size"] = "16px";
-      document.getElementsByTagName("h4")[i].style["color"] = "#000";
-    }
-    window.print();
-    document.getElementById("nav").style.display = "flex";
-
-    document.getElementById("footer").style.display = "block";
-    document.getElementById("cv-form").style.display = "block";
-    document.getElementById("resume").style.marginTop = "100px";
-    document.getElementById("resume").className = "col-md-6";
-    document.getElementById("heading").style.display = "block";
-    document.getElementById("btnN").style.display = "block";
-  } else {
-    document.getElementById("nav").style.display = "none";
-    document.getElementById("resume").style.marginTop = "0px";
-    document.getElementById("cv-form").style.display = "none";
-    document.getElementById("heading").style.display = "none";
-    document.getElementById("btnN").style.display = "none";
-    document.getElementById("cv-template").style.display = "block";
-    document.getElementById("resume").className = "col-12";
-    document.getElementById("footer").style.display = "none";
-    window.print();
-    document.getElementById("nav").style.display = "flex";
-
-    document.getElementById("footer").style.display = "block";
-    document.getElementById("cv-form").style.display = "block";
-    document.getElementById("resume").style.marginTop = "100px";
-    document.getElementById("resume").className = "col-md-6";
-    document.getElementById("heading").style.display = "block";
-    document.getElementById("btnN").style.display = "block";
-  }
-}
-
 // nav and footer theme toggle
 let closeBtn = document.querySelector("#close-menu img");
 let menuPage = document.querySelector("#menu-bar");

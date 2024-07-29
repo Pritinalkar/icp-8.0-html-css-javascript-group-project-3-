@@ -1,86 +1,85 @@
 const quizData = [
     {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Cascading Style Sheet",
-        c: "Jason Object Notation",
-        d: "Helicopters Terminals Motorboats Lamborginis",
-        correct: "a",
-    },
-    {
-        question: "What year was HTML first proposed?",
-        a: "1990",
-        b: "1989",
-        c: "1991",
-        d: "1995",
+        question: "Which company developed JavaScript?",
+        a: "Microsoft",
+        b: "Netscape",
+        c: "Sun Microsystems",
+        d: "Oracle",
         correct: "b",
     },
     {
-        question: "Who is known as the father of HTML?",
-        a: "Brendan Eich",
-        b: "Tim Berners-Lee",
-        c: "Håkon Wium Lie",
-        d: "Douglas Crockford",
-        correct: "b",
-    },
-    {
-        question: "Which HTML tag is used to define an internal style sheet?",
-        a: "<script>",
-        b: "<css>",
-        c: "<style>",
-        d: "<link>",
-        correct: "c",
-    },
-    {
-        question: "Which is the correct HTML element for the largest heading?",
-        a: "<heading>",
-        b: "<h6>",
-        c: "<h1>",
-        d: "<head>",
-        correct: "c",
-    },
-    {
-        question: "Which HTML attribute is used to define inline styles?",
-        a: "class",
-        b: "style",
-        c: "styles",
-        d: "font",
-        correct: "b",
-    },
-    {
-        question: "Which HTML tag is used to define an unordered list?",
-        a: "<ul>",
-        b: "<ol>",
-        c: "<li>",
-        d: "<list>",
+        question: "Which symbol is used for comments in JavaScript?",
+        a: "//",
+        b: "/* */",
+        c: "#",
+        d: "<!-- -->",
         correct: "a",
     },
     {
-        question: "What is the correct HTML element for inserting a line break?",
-        a: "<break>",
-        b: "<lb>",
-        c: "<br>",
-        d: "<newline>",
-        correct: "c",
-    },
-    {
-        question: "Which HTML tag is used to define a table?",
-        a: "<table>",
-        b: "<tab>",
-        c: "<tbl>",
-        d: "<t>",
+        question: "How do you declare a variable in JavaScript?",
+        a: "var myVariable",
+        b: "variable myVariable",
+        c: "v myVariable",
+        d: "myVariable var",
         correct: "a",
     },
     {
-        question: "What does the <img> tag require?",
-        a: "alt",
-        b: "src",
-        c: "title",
-        d: "both alt and src",
-        correct: "d",
+        question: "Which method is used to create a new array in JavaScript?",
+        a: "Array()",
+        b: "NewArray()",
+        c: "CreateArray()",
+        d: "MakeArray()",
+        correct: "a",
+    },
+    {
+        question: "How do you write 'Hello World' in an alert box in JavaScript?",
+        a: "msgBox('Hello World')",
+        b: "alert('Hello World')",
+        c: "alertBox('Hello World')",
+        d: "msg('Hello World')",
+        correct: "b",
+    },
+    {
+        question: "How do you add a comment in JavaScript?",
+        a: "/* This is a comment */",
+        b: "// This is a comment",
+        c: "# This is a comment",
+        d: "<!-- This is a comment -->",
+        correct: "b",
+    },
+    {
+        question: "Which JavaScript method is used to write on the browser's console?",
+        a: "console.write()",
+        b: "console.output()",
+        c: "console.log()",
+        d: "console.display()",
+        correct: "c",
+    },
+    {
+        question: "Which method is used to parse a string to an integer in JavaScript?",
+        a: "parseInt()",
+        b: "toInteger()",
+        c: "Integer.parse()",
+        d: "parse()",
+        correct: "a",
+    },
+    {
+        question: "Which method is used to convert a JSON string into a JavaScript object?",
+        a: "JSON.stringify()",
+        b: "JSON.parse()",
+        c: "JSON.convert()",
+        d: "JSON.toObject()",
+        correct: "b",
+    },
+    {
+        question: "Which keyword is used to define a function in JavaScript?",
+        a: "def",
+        b: "function",
+        c: "define",
+        d: "func",
+        correct: "b",
     }
 ];
-
 
 const quiz = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
@@ -149,7 +148,7 @@ submitBtn.addEventListener("click", () => {
                 clearInterval(timerInterval);
                 quiz.innerHTML = `
                     <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-                    <button id ="reload" onclick="location.reload()">Reload</button>
+                    <button onclick="location.reload()" id="reload">Reload</button>
                 `;
             }
         }, 1000); // Delay to show feedback for a second
@@ -166,7 +165,8 @@ function startTimer() {
             clearInterval(timerInterval);
             quiz.innerHTML = `
                 <h2>Time's up! You answered ${score}/${quizData.length} questions correctly</h2>
-                <button onclick="location.reload()"id="reload">Reload</button>
+   
+                <button onclick="location.reload()" id="reload">Reload</button>
             `;
         }
     }, 1000);
